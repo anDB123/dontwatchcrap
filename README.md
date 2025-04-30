@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This webapp aims to replace youtube "doomscrolling" with a much more intentional watching experience. 
+Do you ever find yourself on youtube, switching through video after video but not really watching anything in particular?
+Me too! That's why I created dontwatchcrap (i know there should be an apostrophe but don'twatchcrap doesn't look good. Also, it's not searchable.)
 
-## Getting Started
+The UI is designed around keeping you focused.
 
-First, run the development server:
+<img width="1728" alt="Screenshot 2025-04-30 at 16 20 17" src="https://github.com/user-attachments/assets/c6eda3af-ed81-4325-95d8-650eb697ae8a" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3 Buttons; Stop, delete and next. The player has no ability to pause, go forward and backward or restart the video. Like TV used to be, it's on and you're watching or you miss it. I may remove the pause feature but I felt it better to do this than make the user close the webstie when not watching.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img width="1728" alt="Screenshot 2025-04-30 at 16 21 05" src="https://github.com/user-attachments/assets/9189b01c-fd16-493c-bcdb-b20c0ea416b1" />
+Instead of browsing through recommended content, you need to search for videos. I prefer this as i'ts more intentional than a browse but I don't like that it encourages you to find videos through youtube (THE WEBSITE WE WERE TRYING TO AVOID). Hence, it's a bit of a dumb decision in retropect. I would need to design a brand new browse that will increase your chances of finding good content. Maybe some categories and then videos within those or something.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I've also added a table view. As you get more and more videos, you might want to look for a specific one. If so, the next button becomes less and less useful. 
 
-## Learn More
+<img width="1728" alt="Screenshot 2025-04-30 at 16 23 10" src="https://github.com/user-attachments/assets/5d610159-cd44-4a27-9659-b584b97658cd" />
 
-To learn more about Next.js, take a look at the following resources:
+The main issue if I tried to host this is that my youtube search API only allows 100 searches per day. With this limitation, it becomes a bad use of time to continue development presently. The only way around this would be applying to increase my search limit which requires google to check my code. BOOOOOO! 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This was really fun to develop but I might set my sights on something less reliant on an API next. It's a bit annoying to run into walls.
